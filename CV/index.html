@@ -6,11 +6,12 @@
     <meta name="Description" content="Desarrollador de aplicaciones web y moviles con 0 años de experiencia en la creacion de aplicaciones web. Experto en Python, JavaScript y Java.">
     <meta name="Author" content="Alejandro Diez">
     <title>Alejandro Diez</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
 <body>
     <header>
         <h1>Alejandro Diez</h1>
-        <img src="https://placehold.co/300x300" alt="Foto propia">
+        <img id="photo" src="https://placehold.co/300x300" alt="photo">
     </header>
     <nav>
         <ul>
@@ -25,10 +26,12 @@
     </nav>
     <main>
         <section id="resumen">
-            <h2>Resumen:</h2>
+            <h2 class="subtitle">Resumen:</h2>
+            <p>Descipcion </p>
+            <img id="photo" src="https://placehold.co/300x300" alt="photo">
         </section>
         <section id="experiencia">
-            <h2>Experiencias:</h2>
+            <h2 class="subtitle">Experiencias:</h2>
             <table border="1">
                 <caption>Empresas donde no trabaje</caption>
                 <thead>
@@ -46,17 +49,17 @@
             </table>
         </section>
         <section id="educacion">
-            <h2>Educación: </h2>
+            <h2 class="subtitle">Educación: </h2>
             <p>Unidad Educativa Olimpia</p>
         </section>
         <section id="habilidades">
-            <h2>Habilidades: </h2>
+            <h2 class="subtitle">Habilidades: </h2>
                 <img src="https://www.python.org/static/img/python-logo.png" alt="Python">
                 <img src="https://static.vecteezy.com/system/resources/previews/022/100/945/original/java-logo-transparent-free-png.png" alt="Java" width="150" height="150">
                 <img src="https://th.bing.com/th/id/R.87fec03e00082f4d453e8a394f9a239d?rik=LSeXDhvj2MVDtA&pid=ImgRaw&r=0" alt="C" width="200" height="100">
         </section>
         <section id="proyectos">
-            <h2>Proyectos:</h2>
+            <h2 class="subtitle">Proyectos:</h2>
             <video width="640" height="360" controls>
                 <source src="./Video.mp4" type="video/mp4">
             </video>
@@ -65,12 +68,12 @@
 
 
         <section id="mapa">
-            <h2>Mapa</h2>
+            <h2 class="subtitle">Mapa</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31896.1542201309!2d-79.9637504!3d-2.1463039999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1728502174640!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     
         <section id="contactame">
-            <h2>Contactame</h2>
+            <h2 class="subtitle">Contactame</h2>
             <form action="">
                 <form>
                     <label for="nombre">Nombre Completo:</label>
@@ -84,9 +87,12 @@
                     <textarea id="educacion" name="educacion" rows="5"
                     required></textarea>
                     <label>Habilidades Técnicas:</label><br>
-                    <input type="checkbox" name="habilidades" value="HTML"> HTML
-                    <input type="checkbox" name="habilidades" value="CSS"> CSS
-                    <input type="checkbox" name="habilidades" value="JavaScript">
+                    <div>
+                        <input type="checkbox" name="habilidades" value="HTML"> <span>HTML</span>
+                    </div>
+                        <div><input type="checkbox" name="habilidades" value="CSS"> <span>CSS</span></div>
+                        <input type="checkbox" name="habilidades" value="JavaScript">
+                    
             </form>
         </section>        
     </main>
