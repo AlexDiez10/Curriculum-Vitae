@@ -43,3 +43,13 @@ section {
     height: 24vh;
     flex-wrap: wrap;
 }
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+section form {
+    display: grid;
+    row-gap: 0.5rem;
+}
